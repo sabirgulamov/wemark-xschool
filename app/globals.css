@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@font-face { font-family: 'TT Hoves'; src: url('/fonts/TTHoves-Regular.otf') format('opentype'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'TT Hoves'; src: url('/fonts/TTHoves-Medium.otf') format('opentype'); font-weight: 500 600; font-display: swap; }
+@font-face { font-family: 'TT Firs Neue'; src: url('/fonts/TTFirsNeue-Regular.ttf') format('truetype'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'TT Firs Neue'; src: url('/fonts/TTFirsNeue-Medium.ttf') format('truetype'); font-weight: 500 600; font-display: swap; }
+
+@theme {
+  --font-sans: 'TT Hoves', system-ui, sans-serif;
+  --font-display: 'TT Hoves', 'TT Firs Neue', system-ui, sans-serif;
+  --animate-marquee: marquee 30s linear infinite;
+  @keyframes marquee {
+    to { transform: translateX(-100%); }
+  }
+}
